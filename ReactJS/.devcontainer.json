@@ -1,0 +1,32 @@
+{
+	"name": "ReactJS Devcontainer",
+	"build": {
+		"dockerfile": "Dockerfile",
+		// Update 'VARIANT' to pick a Node version: 10, 12, 14
+		"args": {
+			"VARIANT": "14"
+		}
+	},
+	// Set *default* container specific settings.json values on container create.
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/sh"
+	},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "yarn install",
+	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "node",
+	"extensions": [
+		"esbenp.prettier-vscode",
+		"ms-azuretools.vscode-docker",
+		"ms-vscode.vscode-typescript-tslint-plugin",
+		"alefragnani.bookmarks",
+		"eg2.vscode-npm-script",
+		"christian-kohler.npm-intellisense",
+		"quicktype.quicktype",
+		"msjsdiag.debugger-for-chrome",
+		"firsttris.vscode-jest-runner",
+	],
+	"appPort": 3000
+}
